@@ -75,46 +75,35 @@
 
 </body>
 </html>
-/* ==========================================================================
-   REQUISITO 2 & 8: IDENTIDADE VISUAL EXCLUSIVA (PALETA TERRA E ECO)
-   Comentários explicativos detalhando a arquitetura de estilo em português.
-   ========================================================================== */
-
-/* Reset estrutural básico para remover margens nativas e padronizar o modelo de caixa */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página configurado com uma cor areia quente para reduzir a fadiga visual */
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background-color: #f1ede6; /* Tom areia suave/pastel */
-    color: #3b3730; /* Grafite quente de alto contraste para leitura confortável */
+    background-color: #f1ede6; 
+    color: #3b3730; 
     line-height: 1.8;
     padding: 60px 20px;
 }
 
-/* REQUISITO 6: Wrapper principal que unifica o layout e adiciona sombras sutis */
 .layout-wrapper {
     max-width: 950px;
     margin: 0 auto;
-    background-color: #ffffff; /* Fundo branco para as áreas de leitura textuais */
-    border-radius: 16px; /* Bordas amplas e modernas */
-    box-shadow: 0 12px 35px rgba(59, 55, 48, 0.08); /* Sombra elegante e difusa */
-    overflow: hidden; /* Mantém os cantos dos filhos em harmonia com o arredondamento */
+    background-color: #ffffff; 
+    border-radius: 16px; 
+    box-shadow: 0 12px 35px rgba(59, 55, 48, 0.08); 
+    overflow: hidden; 
 }
 
-/* ==========================================================================
-   ESTILIZAÇÃO DO CABEÇALHO (PAINEL HERO)
-   ========================================================================== */
 .painel-hero {
-    background-color: #243e30; /* Verde-oliva escuro fechado */
+    background-color: #243e30; 
     color: #f1ede6;
     padding: 70px 40px;
     text-align: center;
-    border-bottom: 5px solid #cb724d; /* Detalhe linear em tom Terracota */
+    border-bottom: 5px solid #cb724d; 
 }
 
 .painel-hero h1 {
@@ -126,32 +115,26 @@ body {
 
 .slogan-autoral {
     font-size: 1.15rem;
-    color: #a4bba8; /* Verde acinzentado de tom suave */
+    color: #a4bba8; 
     font-style: italic;
     max-width: 700px;
     margin: 0 auto;
 }
 
-/* ==========================================================================
-   REQUISITO 6: DISTRIBUIÇÃO ESPACIAL DE CONTEÚDO (DIVS EM COLUNAS)
-   ========================================================================== */
 .grade-conteudo {
-    display: flex; /* Cria uma disposição lado a lado de forma flexível */
-    gap: 40px; /* Espaço generoso de separação entre as duas colunas */
+    display: flex; 
+    gap: 40px; 
     padding: 50px;
 }
 
-/* Coluna da esquerda ganha ligeiramente mais peso na divisão de espaço */
 .coluna-texto {
     flex: 1.2;
 }
 
-/* Coluna da direita com foco prático */
 .coluna-praticas {
     flex: 1;
 }
 
-/* Responsividade nativa: se o site for aberto em telas menores que 768px, as colunas empilham */
 @media (max-width: 768px) {
     .grade-conteudo {
         flex-direction: column;
@@ -159,7 +142,6 @@ body {
     }
 }
 
-/* Tipografia de subtítulos internos usando o padrão verde da identidade */
 h2 {
     color: #243e30;
     font-size: 1.5rem;
@@ -170,7 +152,7 @@ h2 {
 .coluna-texto p {
     font-size: 1.05rem;
     margin-bottom: 25px;
-    text-align: justify; /* Alinhamento que confere maior simetria ao bloco conceitual */
+    text-align: justify; 
 }
 
 .coluna-praticas p {
@@ -178,17 +160,14 @@ h2 {
     margin-bottom: 25px;
 }
 
-/* ==========================================================================
-   REQUISITO 4 & 5: LISTAS E LINKS INTERATIVOS ANIMADOS
-   ========================================================================== */
 .lista-exclusiva {
-    list-style: none; /* Desativa marcadores circulares padrões */
+    list-style: none; 
 }
 
 .lista-exclusiva li {
-    background-color: #fcfbfa; /* Caixa sutil com leve variação do branco puro */
+    background-color: #fcfbfa; 
     border: 1px solid #e7e3dc;
-    border-left: 4px solid #cb724d; /* Linha de destaque em terracota */
+    border-left: 4px solid #cb724d; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -202,45 +181,39 @@ h2 {
     font-size: 1.05rem;
 }
 
-/* REQUISITO 5: Links personalizados com linhas animadas em CSS nativo (sem JS) */
 .lista-exclusiva a {
     display: inline-block;
-    color: #cb724d; /* Cor Terracota inicial */
+    color: #cb724d; 
     text-decoration: none;
     font-weight: 600;
     font-size: 0.85rem;
     margin-top: 14px;
     padding-bottom: 2px;
-    position: relative; /* Define o contexto posicional para a linha inferior invisível */
+    position: relative; 
     transition: color 0.3s ease;
 }
 
-/* Criação da linha inferior decorativa simulando um botão animado minimalista */
 .lista-exclusiva a::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0; /* Começa com tamanho zero para ficar oculta */
+    width: 0; 
     height: 2px;
-    background-color: #243e30; /* Cor verde-oliva na animação */
-    transition: width 0.3s ease; /* Efeito de expansão lateral suave */
+    background-color: #243e30; 
+    transition: width 0.3s ease; 
 }
 
-/* Comportamento de transição interativa ao passar o mouse (Hover) */
 .lista-exclusiva a:hover {
-    color: #243e30; /* Altera a cor do texto para verde */
+    color: #243e30; 
 }
 
 .lista-exclusiva a:hover::after {
-    width: 100%; /* Expande a linha cobrindo toda a extensão do link de forma fluida */
+    width: 100%; 
 }
 
-/* ==========================================================================
-   ESTILIZAÇÃO DO RODAPÉ
-   ========================================================================== */
 .painel-rodape {
-    background-color: #17281f; /* Fundo verde ultra escuro para encerramento visual */
+    background-color: #17281f; 
     color: #a4bba8;
     text-align: center;
     padding: 30px;
