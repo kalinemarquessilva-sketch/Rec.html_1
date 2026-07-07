@@ -1,0 +1,235 @@
+Desenvolva uma página web sobre o tema "Empatia e Cooperação". Utilize exclusivamente HTML e CSS. Não utilize JavaScript, frameworks ou bibliotecas externas. Antes de gerar o código, apresente um esquema ilustrado (wireframe textuais/estrutural) mostrando como a página será organizada. O esquema deverá utilizar obrigatoriamente as seguintes tags HTML: <head>, <body>, <h1>, <p>, <div>, <ul>, <li>, <a>. Após o esquema ilustrado, gere os arquivos index.html e style.css, devidamente organizados e comentados.
+[📁 DOCUMENTO HTML]
+ │
+ ├── [<head>] -> Metadados, título da aba e vínculo com style.css
+ │
+ └── [<body>] -> Todo o conteúdo visível do site
+       │
+       ├── [<div class="header">] -> Topo da página
+       │     └── [<h1>] -> Título Principal do Projeto
+       │
+       ├── [<div class="content">] -> Seção Principal
+       │     ├── [<h2>] -> Subtítulo da Seção
+       │     ├── [<p>] -> Parágrafo conceitual sobre Empatia
+       │     └── [<p>] -> Parágrafo conceitual sobre Cooperação
+       │
+       ├── [<div class="examples">] -> Seção de Exemplos Práticos
+       │     ├── [<h2>] -> Subtítulo de Práticas
+       │     └── [<ul>] -> Lista de atitudes
+       │           ├── [<li>] -> Item 1 + [<a>] (Link externo/saiba mais)
+       │           ├── [<li>] -> Item 2 + [<a>] (Link externo/saiba mais)
+       │           └── [<li>] -> Item 3 + [<a>] (Link externo/saiba mais)
+       │
+       └── [<div class="footer">] -> Rodapé da página
+             └── [<p>] -> Créditos do estudante e links autorais
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TÍTULO PERSONALIZADO (Item obrigatório da Etapa 3) -->
+    <title>Conexões Humanas: A Força da Empatia e Cooperação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CONTAINER PRINCIPAL: Organização estruturada com divs -->
+    <div class="main-container">
+        
+        <!-- CABEÇALHO -->
+        <div class="hero-header">
+            <h1>Conexões Humanas</h1>
+            <p class="tagline">Construindo pontes através da escuta e do apoio mútuo.</p>
+        </div>
+
+        <!-- SEÇÃO CONCEITUAL -->
+        <div class="info-section">
+            <div class="card animate-fade">
+                <h2>O Poder da Empatia</h2>
+                <p>Empatia não é apenas se colocar no lugar do outro, mas compreender a realidade alheia sem julgamentos. É a habilidade social que nos permite sintonizar com os sentimentos de quem está ao nosso redor, criando um ambiente seguro para a vulnerabilidade.</p>
+            </div>
+
+            <div class="card animate-fade">
+                <h2>A Dinâmica da Cooperação</h2>
+                <p>Cooperar significa somar forças individuais em prol de um objetivo coletivo. Enquanto a competição divide, a cooperação multiplica os resultados, provando que grandes transformações sociais nascem de pequenas ações coordenadas.</p>
+            </div>
+        </div>
+
+        <!-- SEÇÃO DE EXEMPLOS E LINKS -->
+        <div class="action-section">
+            <h2>Práticas Diárias de Impacto</h2>
+            <p>Podemos aplicar esses conceitos no cotidiano através de ações simples, mas profundamente transformadoras:</p>
+            
+            <!-- LISTA PERSONALIZADA (Item obrigatório da Etapa 3) -->
+            <ul class="custom-list">
+                <li>
+                    <strong>Escuta Ativa:</strong> Ouvir para compreender, e não apenas para responder. 
+                    <a href="https://wikipedia.org" target="_blank" class="custom-link">Aprender técnica →</a>
+                </li>
+                <li>
+                    <strong>Comunicação Não-Violenta:</strong> Expressar necessidades sem agredir ou apontar culpados. 
+                    <a href="https://wikipedia.org" target="_blank" class="custom-link">Ver conceitos →</a>
+                </li>
+                <li>
+                    <strong>Voluntariado Local:</strong> Dedicar tempo para apoiar causas que fortalecem a sua comunidade. 
+                    <a href="https://www.gov.br" target="_blank" class="custom-link">Projetos públicos →</a>
+                </li>
+                <li>
+                    <strong>Mentorias Gratuitas:</strong> Compartilhar conhecimento técnico com quem está iniciando na sua área. 
+                    <a href="https://github.com" target="_blank" class="custom-link">Plataformas de apoio →</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- RODAPÉ -->
+        <div class="site-footer">
+            <p>Projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Web.</p>
+            <p>Criado com carinho e código estático puro. 🌿</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+/* ==========================================================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f5; /* Tom de cinza claro/areia */
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* CONTAINER PRINCIPAL */
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   CABECALHO (Identidade Visual Própria)
+   ========================================================================== */
+.hero-header {
+    background: linear-gradient(135deg, #1b4332, #2d6a4f); /* Tons Verde Esmeralda Escuro */
+    color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.hero-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.hero-header .tagline {
+    font-size: 1.2rem;
+    color: #b7e4c7;
+}
+
+/* ==========================================================================
+   SEÇÕES DE CONTEÚDO (Uso de DIVs para organização)
+   ========================================================================== */
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #52b788; /* Detalhe lateral verde */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.card h2 {
+    color: #1b4332;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* SEÇÃO DE AÇÃO E LISTAS */
+.action-section {
+    padding: 40px;
+}
+
+.action-section h2 {
+    color: #1b4332;
+    margin-bottom: 15px;
+}
+
+/* PERSONALIZAÇÃO DA LISTA (ul e li) */
+.custom-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.custom-list li {
+    background: #f8f9fa;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* PERSONALIZAÇÃO DOS LINKS (a) */
+.custom-link {
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: #d8f3dc;
+    transition: all 0.3s ease;
+}
+
+.custom-link:hover {
+    background: #2d6a4f;
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+/* ==========================================================================
+   RODAPÉ
+   ========================================================================== */
+.site-footer {
+    background: #1b4332;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    border-top: 1px solid #2d6a4f;
+}
+
+.site-footer p {
+    margin-bottom: 5px;
+    color: #d8f3dc;
+}
