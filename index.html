@@ -1,90 +1,89 @@
-Desenvolva uma página web sobre o tema "Empatia e Cooperação". Utilize exclusivamente HTML e CSS. Não utilize JavaScript, frameworks ou bibliotecas externas. Antes de gerar o código, apresente um esquema ilustrado (wireframe textuais/estrutural) mostrando como a página será organizada. O esquema deverá utilizar obrigatoriamente as seguintes tags HTML: <head>, <body>, <h1>, <p>, <div>, <ul>, <li>, <a>. Após o esquema ilustrado, gere os arquivos index.html e style.css, devidamente organizados e comentados.
-[📁 DOCUMENTO HTML]
+==================================================================================================
+[📁 ARQUIVO HTML COMPLETO]
  │
- ├── [<head>] -> Metadados, título da aba e vínculo com style.css
+ ├── [<head>] -> Configurações estruturais, título da página e chamada do arquivo style.css.
  │
- └── [<body>] -> Todo o conteúdo visível do site
+ └── [<body>] -> Todo o conteúdo visível para o usuário final.
        │
-       ├── [<div class="header">] -> Topo da página
-       │     └── [<h1>] -> Título Principal do Projeto
-       │
-       ├── [<div class="content">] -> Seção Principal
-       │     ├── [<h2>] -> Subtítulo da Seção
-       │     ├── [<p>] -> Parágrafo conceitual sobre Empatia
-       │     └── [<p>] -> Parágrafo conceitual sobre Cooperação
-       │
-       ├── [<div class="examples">] -> Seção de Exemplos Práticos
-       │     ├── [<h2>] -> Subtítulo de Práticas
-       │     └── [<ul>] -> Lista de atitudes
-       │           ├── [<li>] -> Item 1 + [<a>] (Link externo/saiba mais)
-       │           ├── [<li>] -> Item 2 + [<a>] (Link externo/saiba mais)
-       │           └── [<li>] -> Item 3 + [<a>] (Link externo/saiba mais)
-       │
-       └── [<div class="footer">] -> Rodapé da página
-             └── [<p>] -> Créditos do estudante e links autorais
+       └── [<div class="site-container">] -> Bloco que centraliza todo o conteúdo na tela.
+             │
+             ├── [<div class="cabecalho">] -> Topo da página com a identidade do tema.
+             │     └── [<h1>] -> Título principal e de maior peso visual da página.
+             │
+             ├── [<div class="bloco-conteudo">] -> Seção conceitual de leitura.
+             │     ├── [<h2>] -> Subtítulo para a introdução.
+             │     ├── [<p>] -> Parágrafo profundo explicando o conceito de Empatia.
+             │     └── [<p>] -> Parágrafo fluido conectando a Empatia com a Cooperação.
+             │
+             ├── [<div class="bloco-praticas">] -> Seção prática com fundo contrastante.
+             │     ├── [<h2>] -> Subtítulo para a área de ação.
+             │     ├── [<p>] -> Breve parágrafo introduzindo a lista.
+             │     └── [<ul>] -> Lista não ordenada que agrupa os exemplos do mundo real.
+             │           ├── [<li>] -> Item 1 (Exemplo prático) + [<a>] (Link de acesso externo).
+             │           ├── [<li>] -> Item 2 (Exemplo prático) + [<a>] (Link de acesso externo).
+             │           └── [<li>] -> Item 3 (Exemplo prático) + [<a>] (Link de acesso externo).
+             │
+             └── [<div class="rodape">] -> Base da página para fechamento estrutural.
+                   └── [<p>] -> Créditos textuais de desenvolvimento.
+==================================================================================================
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Define a codificação de caracteres padrão para evitar problemas com acentuação -->
     <meta charset="UTF-8">
+    <!-- Garante que a página seja responsiva e se ajuste bem a telas de celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TÍTULO PERSONALIZADO (Item obrigatório da Etapa 3) -->
-    <title>Conexões Humanas: A Força da Empatia e Cooperação</title>
+    
+    <!-- Título que aparece na aba do navegador -->
+    <title>Empatia e Cooperação: Os Pilares da Evolução Coletiva</title>
+    
+    <!-- Vinculação obrigatória com o arquivo de estilização externa CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- CONTAINER PRINCIPAL: Organização estruturada com divs -->
-    <div class="main-container">
+    <!-- Container geral para limitar e centralizar a largura do site de forma elegante -->
+    <div class="site-container">
         
-        <!-- CABEÇALHO -->
-        <div class="hero-header">
-            <h1>Conexões Humanas</h1>
-            <p class="tagline">Construindo pontes através da escuta e do apoio mútuo.</p>
+        <!-- Cabeçalho principal com o título de maior relevância -->
+        <div class="cabecalho">
+            <h1>O Poder da Empatia e da Cooperação</h1>
         </div>
 
-        <!-- SEÇÃO CONCEITUAL -->
-        <div class="info-section">
-            <div class="card animate-fade">
-                <h2>O Poder da Empatia</h2>
-                <p>Empatia não é apenas se colocar no lugar do outro, mas compreender a realidade alheia sem julgamentos. É a habilidade social que nos permite sintonizar com os sentimentos de quem está ao nosso redor, criando um ambiente seguro para a vulnerabilidade.</p>
-            </div>
-
-            <div class="card animate-fade">
-                <h2>A Dinâmica da Cooperação</h2>
-                <p>Cooperar significa somar forças individuais em prol de um objetivo coletivo. Enquanto a competição divide, a cooperação multiplica os resultados, provando que grandes transformações sociais nascem de pequenas ações coordenadas.</p>
-            </div>
-        </div>
-
-        <!-- SEÇÃO DE EXEMPLOS E LINKS -->
-        <div class="action-section">
-            <h2>Práticas Diárias de Impacto</h2>
-            <p>Podemos aplicar esses conceitos no cotidiano através de ações simples, mas profundamente transformadoras:</p>
+        <!-- Bloco de Conteúdo: Foco na leitura fluida e conceitual dos temas -->
+        <div class="bloco-conteudo">
+            <h2>Por que esses valores importam?</h2>
             
-            <!-- LISTA PERSONALIZADA (Item obrigatório da Etapa 3) -->
-            <ul class="custom-list">
+            <p>A empatia vai muito além de simplesmente se colocar no lugar do outro. Ela representa a habilidade profunda de desarmar julgamentos para tentar enxergar o mundo através da perspectiva alheia. Quando praticamos a escuta atenta e validamos as emoções de quem está ao nosso redor, criamos pontes de confiança que humanizam os ambientes cotidianos e reduzem os impactos do isolamento social.</p>
+            
+            <p>Quando essa sensibilidade individual se transforma em movimento coletivo, damos vida à cooperação. Cooperar significa somar forças complementares e dividir responsabilidades em prol de um propósito maior. Enquanto a competição busca o sucesso isolado, a cooperação reconhece que os maiores avanços da nossa sociedade nascem de esforços coordenados e do apoio mútuo entre as pessoas.</p>
+        </div>
+
+        <!-- Bloco de Práticas: Fundo em destaque para apresentar ações reais do cotidiano -->
+        <div class="bloco-praticas">
+            <h2>Aplicações no Mundo Real</h2>
+            <p>Transformar ideias em atitudes concretas é o caminho para gerar impacto. Veja alguns exemplos práticos de como exercer esses pilares no seu dia a dia:</p>
+            
+            <!-- Lista não ordenada que agrupa os itens práticos solicitados -->
+            <ul>
                 <li>
-                    <strong>Escuta Ativa:</strong> Ouvir para compreender, e não apenas para responder. 
-                    <a href="https://wikipedia.org" target="_blank" class="custom-link">Aprender técnica →</a>
+                    <strong>Comunicação Não-Violenta:</strong> Expressar sentimentos e necessidades com clareza, sem usar tom de acusação ou agressividade em debates profissionais ou pessoais.
+                    <a href="https://wikipedia.org">Entenda o conceito de CNV</a>
                 </li>
                 <li>
-                    <strong>Comunicação Não-Violenta:</strong> Expressar necessidades sem agredir ou apontar culpados. 
-                    <a href="https://wikipedia.org" target="_blank" class="custom-link">Ver conceitos →</a>
+                    <strong>Voluntariado em Comunidades:</strong> Dedicar tempo, habilidades técnicas ou recursos para fortalecer projetos locais que apoiam famílias em situação de vulnerabilidade.
+                    <a href="https://www.gov.br">Encontre projetos públicos</a>
                 </li>
                 <li>
-                    <strong>Voluntariado Local:</strong> Dedicar tempo para apoiar causas que fortalecem a sua comunidade. 
-                    <a href="https://www.gov.br" target="_blank" class="custom-link">Projetos públicos →</a>
-                </li>
-                <li>
-                    <strong>Mentorias Gratuitas:</strong> Compartilhar conhecimento técnico com quem está iniciando na sua área. 
-                    <a href="https://github.com" target="_blank" class="custom-link">Plataformas de apoio →</a>
+                    <strong>Plataformas Colaborativas de Código:</strong> Compartilhar conhecimentos de forma aberta e gratuita para ajudar no crescimento de estudantes e novos profissionais da tecnologia.
+                    <a href="https://github.com">Explore o ambiente do GitHub</a>
                 </li>
             </ul>
         </div>
 
-        <!-- RODAPÉ -->
-        <div class="site-footer">
-            <p>Projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Web.</p>
-            <p>Criado com carinho e código estático puro. 🌿</p>
+        <!-- Rodapé para fechamento e assinatura do projeto -->
+        <div class="rodape">
+            <p>Página estática construída com propósitos educacionais usando HTML5 e CSS3 puros.</p>
         </div>
 
     </div>
@@ -92,8 +91,218 @@ Desenvolva uma página web sobre o tema "Empatia e Cooperação". Utilize exclus
 </body>
 </html>
 /* ==========================================================================
-   RESET E CONFIGURAÇÕES GERAIS
+   RESET E CONFIGURAÇÕES DE BASE
    ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Impede que paddings ou bordas quebrem as larguras definidas */
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fontes nativas limpas de excelente leitura */
+    background-color: #f4f6f9; /* Tom de fundo cinza bem suave para não cansar a vista */
+    color: #2d3748; /* Grafite escuro para garantir excelente taxa de contraste com o fundo */
+    line-height: 1.7; /* Espaçamento confortável entre as linhas de texto */
+    padding: 40px 20px; /* Margem interna para o site não colar nas bordas em telas menores */
+}
+
+/* ==========================================================================
+   ESTRUTURAÇÃO DOS BLOCOS (DIVS)
+   ========================================================================== */
+
+/* Caixa principal que envelopa o site, centralizando-o e aplicando sombras elegantes */
+.site-container {
+    max-width: 850px; /* Largura máxima ideal para uma leitura confortável de textos */
+    margin: 0 auto; /* Centraliza o bloco horizontalmente na tela */
+    background-color: #ffffff; /* Fundo branco puro para destacar o conteúdo escrito */
+    border-radius: 12px; /* Cantos suavemente arredondados para um aspecto moderno */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); /* Sombra difusa e sutil para dar profundidade */
+    overflow: hidden; /* Garante que os fundos dos filhos respeitem o arredondamento das bordas */
+}
+
+/* Bloco do topo da página */
+.cabecalho {
+    background-color: #0f4c81; /* Azul profundo clássico que transmite segurança e seriedade */
+    color: #ffffff; /* Texto em branco para máximo contraste */
+    padding: 50px 40px; /* Generoso espaço interno para valorizar o título */
+    text-align: center; /* Centraliza o título textualmente */
+}
+
+/* Estilização fina do h1 */
+.cabecalho h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.5px; /* Ajuste sutil na aproximação das letras para melhor estética */
+}
+
+/* Seção conceitual de introdução */
+.bloco-conteudo {
+    padding: 50px 50px 30px 50px;
+}
+
+/* Títulos secundários internos */
+h2 {
+    color: #0f4c81; /* Mantém a consistência visual usando a cor do cabeçalho */
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+/* Parágrafos da seção de conceito */
+.bloco-conteudo p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-align: justify; /* Distribui o texto de forma alinhada nas duas margens */
+}
+
+/* Seção prática de exemplos */
+.bloco-praticas {
+    background-color: #f8fafc; /* Pequena variação de fundo para quebrar a monotonia do branco */
+    padding: 40px 50px 50px 50px;
+    border-top: 1px solid #e2e8f0; /* Divisória fina e discreta entre os blocos */
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.bloco-praticas p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   ELEMENTOS DE LISTA E LINKS (UL, LI, A)
+   ========================================================================== */
+
+/* Configurações da lista */
+.bloco-praticas ul {
+    list-style-type: none; /* Remove as bolinhas padrão para aplicarmos um estilo customizado */
+}
+
+/* Cada item da lista de práticas */
+.bloco-praticas li {
+    background-color: #ffffff; /* Transforma o item em um pequeno card branco */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #0f4c81; /* Filete azul lateral que funciona como guia visual */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02); /* Sombra extremamente leve */
+    font-size: 1rem;
+}
+
+/* Destaca o título de cada exemplo */
+.bloco-praticas li strong {
+    color: #1a202c;
+    display: block; /* Força o título a ficar sozinho na primeira linha do item */
+    margin-bottom: 5px;
+}
+
+/* Estilização pura e moderna para os hiperlinks */
+.bloco-praticas a {
+    display: inline-block; /* Permite aplicar paddings e margens corretamente */
+    color: #0f4c81;
+    text-decoration: none; /* Remove o sublinhado padrão que polui o visual */
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 12px;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent; /* Cria uma linha invisível para a transição */
+    transition: all 0.25s ease-in-out; /* Transição suave nativa para o efeito hover */
+}
+
+/* Efeito visual ao passar o mouse ou focar no link */
+.bloco-praticas a:hover {
+    color: #2b6cb0; /* Altera para um tom de azul mais claro e vivo */
+    border-bottom: 2px solid #2b6cb0; /* Faz a linha surgir suavemente de baixo */
+    padding-left: 4px; /* Pequeno deslocamento lateral para dar sensação de interatividade */
+}
+
+/* ==========================================================================
+   RODAPÉ
+   ========================================================================== */
+.rodape {
+    background-color: #1a202c; /* Fundo escuro para contrastar e encerrar a página */
+    color: #a0aec0; /* Texto cinza claro para leitura sem agressividade */
+    text-align: center;
+    padding: 25px;
+    font-size: 0.85rem;
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ALTERAÇÃO: TÍTULO DA PÁGINA TOTALMENTE PERSONALIZADO -->
+    <title>Ecos da Empatia: A Ciência e a Prática da Cooperação Humana</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- REORGANIZAÇÃO: Novo layout estruturado com divisores específicos -->
+    <div class="wrapper-principal">
+        
+        <!-- CABEÇALHO COM IDENTIDADE PRÓPRIA -->
+        <div class="cabecalho-eco">
+            <h1>Cultivando a Empatia & Cooperação</h1>
+            <p class="subtitulo-autoral">Pequenas conexões geram grandes ecossistemas sociais.</p>
+        </div>
+
+        <!-- MODIFICAÇÃO DE TEXTOS: Novas informações e conceitos fluidos -->
+        <div class="conteudo-autoral">
+            
+            <div class="bloco-texto bg-suave">
+                <h2>A Base Biológica da Empatia</h2>
+                <p>Muito além de uma escolha moral, a empatia possui raízes profundas na nossa biologia. A descoberta dos <strong>neurônios-espelho</strong> pela neurociência provou que nosso cérebro é programado para espelhar as sensações e reações das pessoas ao nosso redor. Quando testemunhamos a dor ou a alegria de alguém, ativamos as mesmas áreas cerebrais, criando um elo biológico indestrutível de compreensão mutável.</p>
+            </div>
+
+            <div class="bloco-texto bg-suave">
+                <h2>A Cooperação como Vantagem Evolutiva</h2>
+                <p>Na história do desenvolvimento humano, os grupos que sobreviveram e prosperaram não foram os mais agressivos, mas sim os mais colaborativos. Cooperar significa entender que o sucesso do indivíduo está interligado ao sucesso da comunidade. Ao compartilhar ferramentas, saberes e proteção, dividimos os riscos da existência e multiplicamos nossa capacidade de inovação e resiliência social.</p>
+            </div>
+
+        </div>
+
+        <!-- NOVOS EXEMPLOS E INFORMAÇÕES ADICIONADAS -->
+        <div class="secao-exemplos-novos">
+            <h2>Pilares Práticos de Transformação</h2>
+            <p>Veja como aplicar esses conceitos no ecossistema onde você vive, estuda ou trabalha:</p>
+            
+            <!-- LISTA ATUALIZADA COM NOVOS ITENS (<ul> e <li>) -->
+            <ul class="lista-exclusiva">
+                <li>
+                    <strong>Validação Emocional Concreta:</strong> Evitar frases como "não chore por isso" ou "isso é bobagem". Pratique acolher o sentimento alheio sem tentar consertá-lo imediatamente de forma racional.
+                    <a href="https://wikipedia.org" class="link-botao">Explorar Psicologia</a>
+                </li>
+                <li>
+                    <strong>Mentoria Coletiva de Código:</strong> Auxiliar quem está iniciando na programação. Criar ambientes onde errar faz parte do aprendizado estimula a segurança psicológica do grupo.
+                    <a href="https://github.com" class="link-botao">Comunidade GitHub</a>
+                </li>
+                <li>
+                    <strong>Crowdsourcing e Projetos Open-Source:</strong> Contribuir com projetos de código aberto ou plataformas colaborativas onde o esforço conjunto resolve problemas globais de forma gratuita.
+                    <a href="https://wikipedia.org" class="link-botao">Conhecer Open Source</a>
+                </li>
+                <!-- NOVO ITEM ADICIONADO -->
+                <li>
+                    <strong>Consumo Consciente e Apoio Local:</strong> Priorizar pequenos produtores e negócios do seu bairro. Fortalecer a economia local é uma forma direta de cooperação comunitária estruturada.
+                    <a href="https://wikipedia.org" class="link-botao">Consumo Sustentável</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- RODAPÉ CUSTOMIZADO -->
+        <div class="rodape-exclusivo">
+            <p>Projeto Individualizado • Desenvolvimento de Páginas Web Estáticas</p>
+            <p>Feito com foco em design limpo e acessibilidade textual. 🌾</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+/* ==========================================================================
+   ESTILO PRÓPRIO E CUSTOMIZADO: PALETA TERRA E ECO
+   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -101,135 +310,152 @@ Desenvolva uma página web sobre o tema "Empatia e Cooperação". Utilize exclus
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f5; /* Tom de cinza claro/areia */
-    color: #2c3e50;
-    line-height: 1.6;
-    padding: 20px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f2f0eb; /* Cor de fundo areia suave, mais quente e menos cansativa */
+    color: #3d3a35; /* Marrom escuro quase preto para harmonia visual e alto contraste */
+    line-height: 1.8;
+    padding: 50px 15px;
 }
 
-/* CONTAINER PRINCIPAL */
-.main-container {
+/* CONTAINER PRINCIPAL REORGANIZADO */
+.wrapper-principal {
     max-width: 900px;
     margin: 0 auto;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    background-color: #ffffff;
+    border-radius: 16px; /* Bordas mais suaves e modernas */
+    box-shadow: 0 10px 30px rgba(61, 58, 53, 0.08); /* Sombra mais densa e sofisticada */
     overflow: hidden;
 }
 
 /* ==========================================================================
-   CABECALHO (Identidade Visual Própria)
+   PERSONALIZAÇÃO DE CORES E IDENTIDADE VISUAL
    ========================================================================== */
-.hero-header {
-    background: linear-gradient(135deg, #1b4332, #2d6a4f); /* Tons Verde Esmeralda Escuro */
-    color: #ffffff;
+
+/* Cabeçalho com tons de Verde Oliva Escuro */
+.cabecalho-eco {
+    background-color: #2b4236; 
+    color: #f2f0eb;
     padding: 60px 40px;
     text-align: center;
+    border-bottom: 4px solid #c97a53; /* Detalhe em tom Terracota */
 }
 
-.hero-header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-    letter-spacing: -1px;
+.cabecalho-eco h1 {
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
 }
 
-.hero-header .tagline {
-    font-size: 1.2rem;
-    color: #b7e4c7;
+.subtitulo-autoral {
+    font-size: 1.1rem;
+    color: #b3c2b9;
+    font-style: italic;
 }
 
-/* ==========================================================================
-   SEÇÕES DE CONTEÚDO (Uso de DIVs para organização)
-   ========================================================================== */
-.info-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+/* ORGANIZAÇÃO DO CONTEÚDO VIA DIVS */
+.conteudo-autoral {
+    display: flex;
+    gap: 25px;
     padding: 40px;
-    background-color: #fafafa;
 }
 
+/* Responsividade nativa: se a tela for pequena, vira coluna */
 @media (max-width: 768px) {
-    .info-section {
-        grid-template-columns: 1fr;
+    .conteudo-autoral {
+        flex-direction: column;
     }
 }
 
-.card {
-    background: #ffffff;
-    padding: 30px;
+.bloco-texto {
+    flex: 1;
+    padding: 25px;
     border-radius: 8px;
-    border-left: 5px solid #52b788; /* Detalhe lateral verde */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
 
-.card h2 {
-    color: #1b4332;
+.bg-suave {
+    background-color: #f7f6f2; /* Caixa sutil para destacar os conceitos */
+    border-top: 3px solid #2b4236;
+}
+
+.bloco-texto h2 {
+    color: #2b4236;
+    font-size: 1.35rem;
     margin-bottom: 15px;
-    font-size: 1.4rem;
 }
 
-/* SEÇÃO DE AÇÃO E LISTAS */
-.action-section {
-    padding: 40px;
+.bloco-texto p {
+    font-size: 1rem;
+    text-align: left;
 }
 
-.action-section h2 {
-    color: #1b4332;
-    margin-bottom: 15px;
+/* SEÇÃO DE LISTAS E EXEMPLOS */
+.secao-exemplos-novos {
+    padding: 0 40px 40px 40px;
+}
+
+.secao-exemplos-novos h2 {
+    color: #2b4236;
+    margin-bottom: 20px;
 }
 
 /* PERSONALIZAÇÃO DA LISTA (ul e li) */
-.custom-list {
-    list-style: none;
-    margin-top: 20px;
+.lista-exclusiva {
+    list-style: none; /* Sem marcadores padrão */
 }
 
-.custom-list li {
-    background: #f8f9fa;
-    margin-bottom: 12px;
-    padding: 15px 20px;
-    border-radius: 6px;
-    border: 1px solid #e9ecef;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.lista-exclusiva li {
+    background-color: #ffffff;
+    border: 1px solid #e6e3dc;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.2s ease;
 }
 
-/* PERSONALIZAÇÃO DOS LINKS (a) */
-.custom-link {
-    color: #2d6a4f;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    padding: 5px 10px;
-    border-radius: 4px;
-    background: #d8f3dc;
-    transition: all 0.3s ease;
+.lista-exclusiva li:hover {
+    transform: translateY(-2px); /* Efeito flutuante ao passar o mouse no card */
 }
 
-.custom-link:hover {
-    background: #2d6a4f;
+.lista-exclusiva strong {
+    color: #c97a53; /* Título interno em Terracota */
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+/* PERSONALIZAÇÃO DOS LINKS (a) ESTILO BOTÃO */
+.link-botao {
+    display: inline-block;
+    margin-top: 15px;
     color: #ffffff;
-    transform: translateX(3px);
+    background-color: #2b4236;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Transição do link ao passar o mouse */
+.link-botao:hover {
+    background-color: #c97a53; /* Muda de Verde para Terracota no hover */
+    padding-left: 20px; /* Estica levemente criando dinamismo visual */
 }
 
 /* ==========================================================================
-   RODAPÉ
+   RODAPÉ PROPRIO
    ========================================================================== */
-.site-footer {
-    background: #1b4332;
-    color: #ffffff;
+.rodape-exclusivo {
+    background-color: #1c2b23;
+    color: #b3c2b9;
     text-align: center;
-    padding: 30px;
-    font-size: 0.9rem;
-    border-top: 1px solid #2d6a4f;
+    padding: 30px 20px;
+    font-size: 0.85rem;
 }
 
-.site-footer p {
-    margin-bottom: 5px;
-    color: #d8f3dc;
+.rodape-exclusivo p {
+    margin-bottom: 4px;
 }
+
