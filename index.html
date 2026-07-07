@@ -220,3 +220,225 @@ h2 {
     font-size: 0.85rem;
     border-top: 1px solid #243e30;
 }
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configura a leitura correta de acentos e caracteres especiais da língua portuguesa -->
+    <meta charset="UTF-8">
+    <!-- Garante responsividade nativa para telas de celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- REQUISITO ALTERADO: Título da aba modificado para algo autoral e de forte impacto -->
+    <title>Ecos da Empatia: A Ciência e a Evolução Prática da Cooperação</title>
+    
+    <!-- Chamada do arquivo CSS local com as regras exclusivas de estilo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- REQUISITO REORGANIZADO: Uso de Divs para criar um encapsulador estrutural amplo -->
+    <div class="layout-wrapper">
+        
+        <!-- Bloco Hero superior com forte apelo visual -->
+        <div class="painel-hero">
+            <h1>Cultivando a Empatia & Cooperação</h1>
+            <p class="slogan-autoral">A evolução humana explicada através do amparo mútuo e das conexões profundas.</p>
+        </div>
+
+        <!-- REQUISITO REORGANIZADO: Div que gerencia a distribuição do espaço em duas colunas -->
+        <div class="grade-conteudo">
+            
+            <!-- Coluna dedicada aos textos conceituais teóricos -->
+            <div class="coluna-texto">
+                <h2>Os Alicerces Biológicos e Sociais</h2>
+                
+                <!-- REQUISITO MODIFICADO: Parágrafo inédito abordando a perspectiva da neurociência -->
+                <p>Muito além de uma simples escolha moral ou convenção social, a empatia possui raízes profundas na nossa biologia. A descoberta dos chamados <strong>neurônios-espelho</strong> revelou que nosso cérebro é naturalmente projetado para mapear, decodificar e espelhar as sensações do outro. Ao testemunharmos as dores ou as alegrias de quem está ao redor, ativamos redes neurais semelhantes às do próprio indivíduo observado, criando uma ponte invisível de mútua compreensão.</p>
+                
+                <!-- REQUISITO MODIFICADO: Parágrafo inédito abordando a perspectiva da evolução colaborativa -->
+                <p>Quando essa percepção interna ganha o espaço público, ela se materializa na cooperação. Analisando a história sob uma ótica antropológica, as comunidades que sobreviveram e prosperaram no planeta não foram aquelas pautadas pela agressividade extrema, mas sim as que dominavam a engenharia do auxílio mútuo. Compartilhar ferramentas, dividir colheitas e proteger coletivamente os vulneráveis reduziu os riscos da existência e transformou a colaboração em nossa maior vantagem evolutiva.</p>
+            </div>
+
+            <!-- Coluna dedicada aos exemplos pragmáticos do ecossistema -->
+            <div class="coluna-praticas">
+                <h2>Valores em Movimento</h2>
+                <p>Ideias abstratas ganham força real quando se transformam em ações tangíveis no cotidiano. Veja como agir:</p>
+                
+                <!-- REQUISITO INCLUÍDO: Lista (ul) contendo itens detalhados (li) incluindo o quarto item inédito -->
+                <ul class="lista-exclusiva">
+                    <li>
+                        <strong>Validação Psicológica Ativa:</strong> Substituir julgamentos e soluções imediatistas pelo simples ato de acolher as emoções alheias, demonstrando que a perspectiva do outro é legítima.
+                        <a href="https://wikipedia.org">Explorar a Psicologia</a>
+                    </li>
+                    <li>
+                        <strong>Segurança Psicológica no Código:</strong> Apoiar novos desenvolvedores revisando seus projetos com paciência e clareza, convertendo o erro em parte natural do aprendizado técnico.
+                        <a href="https://github.com">Contribuir via GitHub</a>
+                    </li>
+                    <li>
+                        <strong>Engenharia de Código Aberto:</strong> Dedicar tempo e conhecimento técnico para desenvolver soluções abertas que resolvem desafios reais de comunidades inteiras de forma livre.
+                        <a href="https://wikipedia.org">Pesquisar sobre Open Source</a>
+                    </li>
+                    <!-- NOVO ITEM INCLUÍDO NA LISTA -->
+                    <li>
+                        <strong>Sustentabilidade e Microeconomia:</strong> Direcionar recursos para comércios locais e pequenos produtores de bairro, promovendo a cooperação econômica e o desenvolvimento sustentável.
+                        <a href="https://wikipedia.org">Acessar Guia de Consumo</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Rodapé do site para fechamento do layout -->
+        <div class="painel-rodape">
+            <p>Projeto de Página Estática Desenvolvido Individualmente com HTML e CSS Puros.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f1ede6; 
+    color: #3b3730; 
+    line-height: 1.8;
+    padding: 60px 20px;
+}
+
+.layout-wrapper {
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #ffffff; 
+    border-radius: 16px; 
+    box-shadow: 0 12px 35px rgba(59, 55, 48, 0.08); 
+    overflow: hidden; 
+}
+
+.painel-hero {
+    background-color: #243e30; 
+    color: #f1ede6;
+    padding: 70px 40px;
+    text-align: center;
+    border-bottom: 5px solid #cb724d; 
+}
+
+.painel-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.slogan-autoral {
+    font-size: 1.15rem;
+    color: #a4bba8; 
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.grade-conteudo {
+    display: flex; 
+    gap: 40px; 
+    padding: 50px;
+}
+
+.coluna-texto {
+    flex: 1.2;
+}
+
+.coluna-praticas {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .grade-conteudo {
+        flex-direction: column;
+        padding: 30px;
+    }
+}
+
+h2 {
+    color: #243e30;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.coluna-texto p {
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+    text-align: justify; 
+}
+
+.coluna-praticas p {
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+}
+
+.lista-exclusiva {
+    list-style: none; 
+}
+
+.lista-exclusiva li {
+    background-color: #fcfbfa; 
+    border: 1px solid #e7e3dc;
+    border-left: 4px solid #cb724d; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.lista-exclusiva strong {
+    color: #243e30;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+}
+
+.lista-exclusiva a {
+    display: inline-block;
+    color: #cb724d; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-top: 14px;
+    padding-bottom: 2px;
+    position: relative; 
+    transition: color 0.3s ease;
+}
+
+.lista-exclusiva a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background-color: #243e30; 
+    transition: width 0.3s ease; 
+}
+
+.lista-exclusiva a:hover {
+    color: #243e30; 
+}
+
+.lista-exclusiva a:hover::after {
+    width: 100%; 
+}
+
+.painel-rodape {
+    background-color: #17281f; 
+    color: #a4bba8;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.85rem;
+    border-top: 1px solid #243e30;
+}
